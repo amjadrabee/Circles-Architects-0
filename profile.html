@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+    <div class="name logo-link"><a href="index.html" class="a-name logo-link"><img src="../Website/Circles Branding/logo/PNG/005.png" alt="Circles Architects Logo" id="unique-logo"></a></div>
+    <nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <div class="name-in-menu logo-link"><a style="text-decoration: underline !important;" href="index.html"><img src="../Website/Circles Branding/logo/PNG/005.png" alt="Circles Architects Logo" id="unique-logo-mobile"></a></div>
+            <li><a href="work.html">Work</a></li>
+            <li><a style="text-decoration: underline !important;" href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="nav-placeholder"></div>
+    <div id="project-header">
+        <div class="overlay"></div>
+        <h1>small story</h1>
+        <p>CIRCLES is a team consisting of high-level specialists in various aspects of engineering. We seek to create a healthy, comfortable, and luxurious environment for users through carefully studied architectural designs supported by effective and inexpensive structural and mechanical systems.</p>
+        <p>eh ra2yak f el-story?</p>
+    </div>
+    <!-- ....................................................... -->
+    <div class="container">
+        <div class="image-container">
+            <img src="../image/img-0.0.jpg"
+                alt="Mohamed Rabee" class="image">
+        </div>
+        <div class="text-container">
+            <h2 class="project-description-h">Mohamed Rabea</h2>
+            <p class="project-description-p"> mohands m3mari 3aysh f elborg 3ando 30 sana y3ny ragl 3agooooooz 3ando a5 saydaly asmo Yasser malnash da3wa beh w o5t asmha Hana de sanawya rabna ma3aha w ana Amjad lesa 3aysh elhamdollah</p>
+        </div>
+
+        <!-- <div id="project-description">
+        <h2 class="project-description-h">Mohamed Rabea</h2>
+        <p class="project-description-p"> mohands m3mari 3aysh f elborg 3ando 30 sana y3ny ragl 3agooooooz 3ando a5 saydaly asmo Yasser malnash da3wa beh w o5t asmha Hana de sanawya rabna ma3aha w ana Amjad lesa 3aysh elhamdollah</p>
+    </div> -->
+        <!-- ....................................................... -->
+
+        <script>
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuIcon.addEventListener('click', () => {
+                menuIcon.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                    const menuIcon = document.querySelector('.menu-icon');
+                    const navLinks = document.querySelector('.nav-links');
+                    menuIcon.addEventListener('click', () => {
+                        menuIcon.classList.toggle('active');
+                        navLinks.classList.toggle('active');
+                    });
+                });
+            const images = document.querySelectorAll('#project-images a');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const closeBtn = document.querySelector('#lightbox .close');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+
+            images.forEach(image => {
+                image.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    lightbox.classList.remove('hidden');
+                    lightboxImage.src = image.href;
+                    lightboxCaption.textContent = image.dataset.caption || ''; // Get caption or empty string
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                lightbox.classList.add('hidden');
+            });
+
+            lightbox.addEventListener('click', (event) => {
+                if (event.target === lightbox) {
+                    lightbox.classList.add('hidden');
+                }
+            });
+        </script>
+        <script src="script.js"></script>
+</body>
+
+</html>
