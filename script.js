@@ -1,4 +1,4 @@
-const images = ["../image/home-page/001.jpg", "../image/home-page/002.jpg", "../image/home-page/003.jpg", "../image/home-page/004.jpg", "../image/home-page/005.jpg", "../image/home-page/006.jpg", "../image/home-page/007.jpg", "../image/home-page/008.jpg", "../image/home-page/009.jpg"];
+const images = ["image/home-page/001.jpg", "image/home-page/002.jpg", "image/home-page/003.jpg", "image/home-page/004.jpg", "image/home-page/005.jpg", "image/home-page/006.jpg", "image/home-page/007.jpg", "image/home-page/008.jpg", "image/home-page/009.jpg"];
 let currentImageIndex = 0;
 const imageContainer = document.getElementById("image-container");
 const prevBtn = document.getElementById("prev-btn");
