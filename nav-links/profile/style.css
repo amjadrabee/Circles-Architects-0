@@ -218,7 +218,7 @@ nav {
     color: gray;
 }
 
-footer {
+.footer {
     width: 100%;
     color: #fff;
     text-align: center;
@@ -235,7 +235,7 @@ footer {
     margin: 0 auto;
 }
 
-footer p {
+.footer p {
     margin: 5px 0;
     font-size: 0.9rem;
 }
@@ -273,7 +273,7 @@ footer p {
         font-size: 1.5rem;
     }
 
-    footer p {
+    .footer p {
         font-size: 0.8rem;
     }
 
