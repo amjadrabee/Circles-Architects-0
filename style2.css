@@ -336,6 +336,7 @@ img.active {
         font-size: 1em;
         margin: 15px 10px 10px 10px;
         z-index: 6;
+        position: relative;
     }
     
     .social-icons a:hover {
