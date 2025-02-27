@@ -292,15 +292,25 @@ footer {
         transition: background-image 1s linear;
     }
 
-    footer {
+    .footer {
+        top: 86vh;
         background-color: black;
         width: 100vw;
         height: 50vh;
         text-align: center;
-        display: block;
+        display: flex;
+        z-index:8;
+        position: fixed;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
         color: rgb(255, 255, 255);
     }
-    footer p {
+    .footer-content{
+        position: absolute;
+        padding-top: 40px;
+    }
+    .footer p {
         font-size: 0.7rem;
         margin: 0;
     }
@@ -317,6 +327,7 @@ footer {
     }
     .social-icons {
         font-size: 1em;
+        position: absolute;
         margin: 15px 10px 10px 10px;
     }
     
