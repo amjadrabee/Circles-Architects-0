@@ -194,7 +194,7 @@ img.active {
     right: 20px;
 }
 
-.footer {
+#footer {
     display: none;
 }
 #head{
@@ -292,7 +292,7 @@ img.active {
         transition: background-image 1s linear;
     }
 
-    .footer {
+    #footer {
         top: 86vh;
         background-color: black;
         width: 100vw;
@@ -306,11 +306,11 @@ img.active {
         align-self: center;
         color: rgb(255, 255, 255);
     }
-    .footer-content{
+    #footer-content{
         position: absolute;
         padding-top: 40px;
     }
-    .footer p {
+    #footer p {
         font-size: 0.7rem;
         margin: 0;
     }
