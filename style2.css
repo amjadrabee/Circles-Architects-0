@@ -269,7 +269,7 @@ footer {
     }
 
     #image-container {
-        margin-top: 200px;
+        margin-top: 240px;
         margin-bottom: 200px;
     }
 
@@ -295,7 +295,7 @@ footer {
     footer {
         background-color: black;
         width: 100vw;
-        height: 22vh;
+        height: 50vh;
         text-align: center;
         display: block;
         color: rgb(255, 255, 255);
