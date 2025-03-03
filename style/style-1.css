@@ -10,6 +10,10 @@ body {
     touch-action: pan-y pinch-zoom;
 }
 
+.lang-menu {
+    text-align: right;
+    position: relative;
+}
 
 .logo-link {
     display: block;
@@ -162,10 +166,8 @@ nav {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Styles for the work page grid */
 #work-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     grid-gap: 15px;
     padding: 3.3vw 3vw 3.3vw 3vw;
     max-width: 1200px;
@@ -189,10 +191,7 @@ nav {
     transition: transform 0.3s ease;
 }
 
-/* .grid-item:hover img {
-    opacity: 0;
-    transform: scale(1.1);
-} */
+
 .overlay {
     position: absolute;
     top: 0;
@@ -219,6 +218,42 @@ nav {
     font-size: 20px;
 }
 
+
+.social-icons {
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: gray;
+}
+
+.footer {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+    /* top: 200px; */
+    display: block;
+}
+
+#footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
 
 @media only screen and (min-width: 600px) {
     #work-grid {
@@ -273,6 +308,36 @@ nav {
     .nav-button {
         padding: 10px;
         font-size: 1.5em;
+    }
+
+    .footer {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        z-index: 2;
+        /* top: 200px; */
+        display: block;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+        font-size: 1.1rem;
+    }
+
+    .social-icons a {
+        color: white;
+        margin: 0 10px;
+    }
+
+    .social-icons a:hover {
+        color: gray;
     }
 }
 
@@ -334,6 +399,43 @@ nav {
         font-size: 1.5em;
     }
 
+    .lang-menu {
+        text-align: center;
+        position: relative;
+        margin-left: 0;
+        font-size: .9em;
+    }
+
+    .footer {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        z-index: 2;
+        /* top: 200px; */
+        display: block;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        color: white;
+        margin: 0 10px;
+    }
+
+    .social-icons a:hover {
+        color: gray;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -341,5 +443,12 @@ nav {
         grid-template-columns: 3fr;
         grid-template-columns: repeat(3, minmax(300px, 1fr));
         grid-gap: 15px;
+    }
+
+    .lang-menu {
+        text-align: center;
+        position: relative;
+        margin-left: 0;
+        font-size: .9em;
     }
 }
