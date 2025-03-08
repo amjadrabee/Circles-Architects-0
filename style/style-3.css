@@ -209,6 +209,20 @@ nav {
     color: gray;
 }
 
+.wa-num {
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+.wa-num a {
+    color: white;
+    margin: 0 10px;
+}
+
+.wa-num a:hover {
+    color: gray;
+}
+
 footer {
     width: 100%;
     color: #fff;
@@ -270,12 +284,12 @@ footer p {
     #contact-content {
         color: white;
         text-align: center;
-        padding: 20px 0;
+        padding: 20px 20px;
         z-index: 1;
     }
 
     #contact-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 20px;
     }
 
@@ -295,6 +309,20 @@ footer p {
     }
 
     .social-icons a:hover {
+        color: gray;
+    }
+
+    .wa-num {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    .wa-num a {
+        color: white;
+        margin: 0 10px;
+    }
+
+    .wa-num a:hover {
         color: gray;
     }
 
