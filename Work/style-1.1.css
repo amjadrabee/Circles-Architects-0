@@ -417,7 +417,7 @@ nav {
 
     #project-images {
         grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-gap: 30px;
         justify-items: center;
         align-content: center;
         align-items: center;
