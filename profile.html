@@ -7,9 +7,6 @@
     <title>Profile | Circles Architects</title>
     <link rel="icon"
         href="https://lh3.googleusercontent.com/pw/AP1GczO0K3Q4O6Ve_VJq9aiKZEZeTjK8fOvfse0MwdOPWJk78FIr3wuhDgC-puWv26jYH1vmpoaZvX7Z8XQY1fNxBg2Fjs19HhHZ792_hqBogP8nLdgUcE2wf2cXppCtANJItv4w6o2He_Z_vdluagdpm6eE=w346-h346-s-no-gm?authuser=0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style/style-2.css">
     <!-- google-fonts -->
@@ -18,6 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,30 +34,68 @@
             <li><a href="work.html">Work</a></li>
             <li><a style="text-decoration: underline !important;" href="profile.html">Profile</a></li>
             <li><a href="contact.html">Contact</a></li>
+
             <div class="lang-menu">
                 <div class="selected-lang">
                     <a href="ar/profile.html" style=" font-family: Alexandria,sans-serif; font-style: normal;">🇸🇦
                         العربية</a>
                 </div>
-
             </div>
+
         </ul>
     </nav>
-    <div id="contact-content">
-        <h1>About Circles</h1>
-        <p>An engineering consulting office that provides architectural and interior design services that are based on
-            the careful study of a team of highly experienced professional architects, engineers and designers.</p>
-        <p>We aim for quality in work, constant creativity and achieving the highest possible comfort for users by
-            carefully studying the needs of the project and finding the optimal solutions to reach comprehensive
-            sustainability, and our keenness on the element of beauty and creativity in our designs is what makes our
-            work the focus of attention and admiration.</p>
-        <p>We always strive to update our knowledge to be fully aware of all that is new in terms of modern construction
-            and new materials and to keep pace with the markets, and we work on the continuous development of our work
-            tools to maintain the quality of the work and the accuracy and efficiency of the products. </p>
-        <br>
-        <p>If you have received one of our services, we would be honored if you would leave us your feedback</p>
+
+    <div id="project-header"
+        style="background-image: url(https://lh3.googleusercontent.com/pw/AP1GczMiUxz69gHIby8pCjR_My-XMZnrtg2h3OQkeDOhibKw4fWtVvI2GNBYRmdwDoGTUx37gUFA9DXYuTH4JgBX31bfTsRkKP38N_3N-9DyTLug5NwujC0UxGilWKG5zeL8a-ro1hHSn7QZh8Bp1m5Fu0UK=w2500-h1924-s-no-gm?authuser=0);">
+        <div class="overlay"></div>
+        <h1>PROFILE</h1>
+        <!-- <p>Residential project</p>
+        <p>Saudi Arabia</p> -->
     </div>
-    <!-- <div id="footer-placeholder"></div> -->
+
+    <!-- <div class="contact-head">
+        <div class="profile-content">
+            <h1></h1>
+            <p>Circles Architects</p>
+        </div>
+        <hr>
+    </div> -->
+
+
+    <div id="contact-content">
+        <div class="about-title">
+            <h1>About Circles</h1>
+        </div>
+        <div class="about-content">
+            <p>An engineering consulting office that provides architectural and interior design services that are based
+                on
+                the careful study of a team of highly experienced professional architects, engineers and designers.</p>
+            <hr>
+            <p>We aim for quality in work, constant creativity and achieving the highest possible comfort for users by
+                carefully studying the needs of the project and finding the optimal solutions to reach comprehensive
+                sustainability, and our keenness on the element of beauty and creativity in our designs is what makes
+                our
+                work the focus of attention and admiration.</p>
+            <hr>
+            <p>We always strive to update our knowledge to be fully aware of all that is new in terms of modern
+                construction
+                and new materials and to keep pace with the markets, and we work on the continuous development of our
+                work
+                tools to maintain the quality of the work and the accuracy and efficiency of the products. </p>
+            <hr>
+            <br>
+            <p>If you have received one of our services, we would be honored if you would leave us your feedback</p>
+            <br> <br>
+            <form action="mailto:circles.architects@gmail.com" method="post" enctype="text/plain">
+                <label>your feedback: </label> <br> <br>
+                <textarea name='My feedback: ' rows="10" cols="31" spellcheck="false"> </textarea> <br>
+                <input type="submit">
+            </form>
+        </div>
+        
+    </div>
+   
+
     <div class="footer">
         <div class="social-icons">
             <a href="#"><i class="fa-brands fa-snapchat"></i></a>
@@ -72,7 +108,7 @@
         </div>
         <div id="footer-content">
             <p>Copyright &copy; 2024 Circles Architects</p>
-            <p>Designed by <span style="text-decoration: underline;"><a style="color:white;"
+            <p>Designed by <span style="text-decoration: underline;"><a style="color:rgb(255, 239, 239);"
                         href="https://eg.linkedin.com/in/amjad-rabee-980a40232">RabeeTheGlorify</a></span></p>
         </div>
     </div>
@@ -96,13 +132,43 @@
                     navLinks.classList.toggle('active');
                 });
             });
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
+        // nav background
+        const name = document.querySelector('.name');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                name.classList.add('show');
+            } else {
+                name.classList.remove('show');
+            }
+        });
+
+        const images = document.querySelectorAll('#project-images a');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const closeBtn = document.querySelector('#lightbox .close');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+
+        images.forEach(image => {
+            image.addEventListener('click', (e) => {
+                e.preventDefault();
+                lightbox.classList.remove('hidden');
+                lightboxImage.src = image.href;
+                lightboxCaption.textContent = image.dataset.caption || '';
             });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+        });
+
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                lightbox.classList.add('hidden');
+            }
+        });
     </script>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
