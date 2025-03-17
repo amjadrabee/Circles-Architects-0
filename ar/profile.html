@@ -28,8 +28,7 @@
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
-            <div class="name-in-menu logo-link"><a style="text-decoration: underline !important;"
-                    href="index.html"><img
+            <div class="name-in-menu logo-link"><a style="text-decoration: underline !important;" href="index.html"><img
                         src="https://lh3.googleusercontent.com/pw/AP1GczMW5aUhdch_NJpdfr4llR6GHULCp-G2DYQjxIJ-3rj4dpKQYhv0-iM0csEHkPr6BjncWyirWBA2LK5iebqxVF9WLrbYQdD_k1eWKkWIraqhYZn71PbEMpS8g17mIFhxE6Cgl2jECpL1LwgIu-ut8a_z=w1634-h343-s-no-gm?authuser=0"
                         alt="Circles Architects Logo" id="unique-logo-mobile"></a></div>
             <li><a href="work.html">المشاريع</a></li>
@@ -38,9 +37,8 @@
 
             <div class="lang-menu">
                 <div class="selected-lang">
-                    <a href="../profile.html"
-                    style="font-family:Ubuntu, sans-serif; font-style: normal;">English
-                    🇺🇸</a>
+                    <a href="../profile.html" style="font-family:Ubuntu, sans-serif; font-style: normal;">English
+                        🇺🇸</a>
                 </div>
             </div>
 
@@ -70,19 +68,28 @@
         </div>
         <div class="about-content">
             <p>كتب استشارات هندسية يقدم خدمات التصميم المعماري و التصميم الداخلي و التي يقوم عليها و على دراستها بعناية
-                فريق من المعماريين المحترفين و المهندسين و المصممين المتخصصين ذوي خبرة عالية.</p><hr>
+                فريق من المعماريين المحترفين و المهندسين و المصممين المتخصصين ذوي خبرة عالية.</p>
+            <hr>
             <p>نهدف إلى الجودة في العمل و الإبداع الدائم و تحقيق أعلى راحة ممكنة للمستخدمين عن طريق الدراسة الدقيقة
-                لإحتياجات المشروع و إيجاد الحلول المثلى للوصول للإستدامة الشاملة , كما ان حرصنا على عنصر الجمال و الإبداع في
+                لإحتياجات المشروع و إيجاد الحلول المثلى للوصول للإستدامة الشاملة , كما ان حرصنا على عنصر الجمال و
+                الإبداع في
                 تصاميمنا و هو ما يجعل أعمالنا محط انتباه و إعجاب.</p>
-                <hr>
+            <hr>
             <p>نسعى دائما لتحديث معارفنا لنكون على دراية كاملة بكل ما هو جديد من ناحية البناء الحديث و الخامات الجديدة
-                لنواكب الأسواق , كما نعمل على التطوير المستمر لأدوات عملنا للحفاظ على جودة الأعمال و الدقة و كفاءة المنتجات. </p><hr>
+                لنواكب الأسواق , كما نعمل على التطوير المستمر لأدوات عملنا للحفاظ على جودة الأعمال و الدقة و كفاءة
+                المنتجات. </p>
+            <hr>
             <br>
             <p>إذا كنت قد حصلت على احدى خدماتنا نتشرف بأن تترك لنا رأيك </p> <br>
-            <form action="mailto:circles.architects@gmail.com" method="post" enctype="text/plain">
+            <!-- <form action="mailto:circles.architects@gmail.com" method="post" enctype="text/plain">
                 <label>:رأيك</label> <br> <br>
-                <textarea name='My feedback: ' rows="10" cols="31" spellcheck="false"> </textarea> <br>
-                <input type="submit">
+                <textarea name=" " rows="10" cols="31" spellcheck="false" style="direction: rtl;"> </textarea> <br>
+                <input type="submit" value="إرسال" >
+            </form> -->
+            <form id="myForm" action="mailto:circles.architects@gmail.com" method="post" enctype="text/plain">
+                <label>:رأيك</label> <br><br>
+                <textarea id="opinion" name="opinion" rows="10" cols="31" spellcheck="false" style="direction: rtl;"></textarea> <br>
+                <button type="button" onclick="sendEmail()">ارسال</button>
             </form>
         </div>
     </div>
@@ -158,6 +165,16 @@
                 lightbox.classList.add('hidden');
             }
         });
+
+        function sendEmail() {
+            var opinion = document.getElementById('opinion').value;
+            var encodedOpinion = encodeURIComponent(opinion);
+            var subject = encodeURIComponent("رأيك");
+
+            var mailtoLink = "mailto:circles.architects@gmail.com?subject=" + subject + "&body=" + encodedOpinion;
+
+            window.location.href = mailtoLink;
+        }
     </script>
     <script src="../js/script.js"></script>
 </body>
