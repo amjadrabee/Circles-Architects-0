@@ -86,15 +86,15 @@
             <br>
             <p>If you have received one of our services, we would be honored if you would leave us your feedback</p>
             <br> <br>
-            <form action="mailto:circles.architects@gmail.com" method="post" enctype="text/plain">
-                <label>your feedback: </label> <br> <br>
-                <textarea name='My feedback: ' rows="10" cols="31" spellcheck="false"> </textarea> <br>
-                <input type="submit">
+            <form id="myForm" action="mailto:circles.architects@gmail.com" method="post" enctype="text/plain">
+                <label>your feedback:</label> <br><br>
+                <textarea id="opinion" name="opinion" rows="10" cols="31" spellcheck="false" ></textarea> <br>
+                <button type="button" onclick="sendEmail()">submit</button>
             </form>
         </div>
-        
+
     </div>
-   
+
 
     <div class="footer">
         <div class="social-icons">
@@ -167,6 +167,15 @@
                 lightbox.classList.add('hidden');
             }
         });
+        function sendEmail() {
+            var opinion = document.getElementById('opinion').value;
+            var encodedOpinion = encodeURIComponent(opinion);
+            var subject = encodeURIComponent("My feedback");
+
+            var mailtoLink = "mailto:circles.architects@gmail.com?subject=" + subject + "&body=" + encodedOpinion;
+
+            window.location.href = mailtoLink;
+        }
     </script>
     <script src="../js/script.js"></script>
 </body>
