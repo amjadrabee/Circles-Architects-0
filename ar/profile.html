@@ -8,13 +8,28 @@
     <link rel="icon"
         href="https://lh3.googleusercontent.com/pw/AP1GczO0K3Q4O6Ve_VJq9aiKZEZeTjK8fOvfse0MwdOPWJk78FIr3wuhDgC-puWv26jYH1vmpoaZvX7Z8XQY1fNxBg2Fjs19HhHZ792_hqBogP8nLdgUcE2wf2cXppCtANJItv4w6o2He_Z_vdluagdpm6eE=w346-h346-s-no-gm?authuser=0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="../style/style-2.css">
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../style/style-2.css">
+
+    <style>
+        #project-header h1 {
+            text-align: right;
+            padding-right: 120px;
+            padding-left: 0;
+        }
+
+        @media (max-width: 768px) {
+            #project-header h1 {
+                padding-right: 20px;
+            }
+        }
+    </style>
+
 
 </head>
 
@@ -62,11 +77,11 @@
     </div> -->
 
 
-    <div id="contact-content">
-        <div class="about-title">
-            <h1>عن دوائر</h1>
+    <div id="contact-content" style="text-align: right; direction: rtl;">
+        <div class="about-title" style="text-align: right; direction: rtl;">
+            <h1 style="text-align: right; direction: rtl;">عن دوائر</h1>
         </div>
-        <div class="about-content">
+        <div class="about-content" style="text-align: right; direction: rtl;">
             <p>كتب استشارات هندسية يقدم خدمات التصميم المعماري و التصميم الداخلي و التي يقوم عليها و على دراستها بعناية
                 فريق من المعماريين المحترفين و المهندسين و المصممين المتخصصين ذوي خبرة عالية.</p>
             <hr>
@@ -87,8 +102,9 @@
                 <input type="submit" value="إرسال" >
             </form> -->
             <form id="myForm" action="mailto:circles.architects@gmail.com" method="post" enctype="text/plain">
-                <label>:رأيك</label> <br><br>
-                <textarea id="opinion" name="opinion" rows="10" cols="31" spellcheck="false" style="direction: rtl;"></textarea> <br>
+                <label>رأيك:</label> <br><br>
+                <textarea id="opinion" name="opinion" rows="10" cols="31" spellcheck="false"
+                    style="direction: rtl;"></textarea> <br>
                 <button type="button" onclick="sendEmail()">ارسال</button>
             </form>
         </div>
