@@ -385,7 +385,7 @@ nav {
     border: dotted 8px;
     color: white;
     border-bottom: none;
-    border-radius: 2px;
+/*     border-radius: 2px; */
     width: 30%;
     margin: 0;
 }
@@ -447,7 +447,7 @@ nav {
     }
 
     #project-header {
-        padding: 100px 10px 50px 10px;
+        padding: 150px 10px 100px 10px;
     }
 
     #project-header h1 {
