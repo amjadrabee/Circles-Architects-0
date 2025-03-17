@@ -382,10 +382,10 @@ nav {
 }
 
 .about-content hr {
-    border: dotted 8px;
+    border: dotted 8px !important;
     color: white;
-    border-bottom: none;
-    border-radius: 8px;
+    border-bottom: none !important;
+    border-radius: 5px !important;
     width: 30%;
     margin: 0;
 }
